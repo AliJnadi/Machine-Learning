@@ -24,10 +24,28 @@ This project is for Assignment1 solution related to subject of Machine Learning 
 
 ## Repository Structure
 
+```tree
+├── .gitignore                               <- Files that should be ignored by git.
+│                               
+├── requirements.txt                         <- The requirements file for reproducing the analysis environment, e.g.
+│                                               generated with `pip freeze > requirements.txt`. Might not be needed if using conda.
+│
+├── Data                                     <- Data files directory
+│   ├── database                             <- main database directory
+│   │        └── flight_delay.csv            <- main csv file
+│   │
+|   ├── test_set                             <- test data directory
+│   │        └── test.csv                    <- test csv file
+|   |
+|   └── train_set                            <- train data directory
+|            ├── train.csv                   <- train csv file without filtering
+│            └── train_o.csv                 <- train csv file with filtering
+|
+└── src                                      <- Code for use in this project.
+    ├── database_prepare.py                  <- database preparing script
+    ├── model.py                             <- model creation, training and testing script
+    └── outliers_filtering.py                <- training data filtering using Isolating forests script
 ```
-
-```
-
 ## Contributing to This Repository
 Contributions to this repository are greatly appreciated and encouraged.<br>
 To contribute an update simply:
